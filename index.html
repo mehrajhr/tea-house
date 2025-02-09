@@ -7,16 +7,16 @@
     <!-- Tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          }
-        }
-      </script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
 
     <!-- Google Fonts cdn -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,8 +27,120 @@
     />
 
     <!-- Font Awesome cdn -->
-    <script src="https://kit.fontawesome.com/20ed8860d8.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/20ed8860d8.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
+    <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
+      <!-- header section -->
+      <header class="flex flex-col sm:flex-row pt-10 mb-20">
+        <!-- text-content -->
+        <div>
+          <h1 class="text-5xl md:text-7xl">
+            It's good<br />
+            tea time at The<br />
+            Tea House
+          </h1>
+          <br />
+
+          <p class="text-gray-500 w-3/4">
+            Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+            Your Taste Buds.
+          </p>
+          <br />
+
+          <button
+            class="bg-gradient-to-r from-orange-500 to-red-500 px-5 py-3 rounded-lg text-white text-xl font-semibold"
+          >
+            Explore More
+            <i
+              class="fa-solid fa-arrow-right -rotate-45 text-white text-xl"
+            ></i>
+          </button>
+        </div>
+
+        <!-- image content -->
+        <div>
+          <!-- image -->
+          <div>
+            <img class="w-full" src="images/banner.png" alt="" />
+          </div>
+
+          <!-- card -->
+          <div
+            class="absolute flex items-center bg-white shadow-lg px-2 py-2 md:px-10 md:py-4 rounded-lg top-32 right-28 md:top-60 md:right-32 lg:top-80 lg:right-96"
+          >
+            <!-- icon -->
+            <div><i class="fa-solid fa-star text-2xl text-yellow-500"></i></div>
+
+            <!-- text -->
+            <div class="ml-2">
+              <h2 class="lg:text-2xl font-bold">5.00</h2>
+              <p class="text-gray-500">Trust Pilot Ratings</p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- featured products section -->
+
+      <section class="py-8 lg:py-24">
+        <!-- Title -->
+        <div class="text-center mb-8">
+          <h1 class="text-3xl md:text-4xl font-bold mb-5">
+            Our Feature Production
+          </h1>
+          <p class="text-gray-600 max-w-xl mx-auto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+            libero rerum iure assumenda perspiciatis architecto recusandae ipsam
+            molestiae autem facilis!
+          </p>
+        </div>
+
+        <!-- Grid Cards -->
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 text-center">
+          <!-- card 1 -->
+          <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+            <img class="mx-auto pt-4" src="images/tea-1.png" alt="" />
+            <div class="p-4">
+              <h2 class="font-bold text-xl">Milk Tea</h2>
+              <p class="text-gray-600">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,laboriosam
+              </p>
+            </div>
+          </div>
+          <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+            <img class="mx-auto pt-4" src="images/tea-2.png" alt="" />
+            <div class="p-4">
+              <h2 class="font-bold text-xl">Black Tea</h2>
+              <p class="text-gray-600">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,laboriosam
+              </p>
+            </div>
+          </div>
+          <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+            <img class="mx-auto pt-4" src="images/tea-3.png" alt="" />
+            <div class="p-4">
+              <h2 class="font-bold text-xl">Lemon Tea</h2>
+              <p class="text-gray-600">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,laboriosam
+              </p>
+            </div>
+          </div>
+          <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+            <img class="mx-auto pt-4" src="images/tea-4.png" alt="" />
+            <div class="p-4">
+              <h2 class="font-bold text-xl">Green Tea</h2>
+              <p class="text-gray-600">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,laboriosam
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
