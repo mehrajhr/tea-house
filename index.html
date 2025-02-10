@@ -4,20 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tea House</title>
-    <!-- Tailwind cdn -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: "#da373d",
-            },
-          },
-        },
-      };
-    </script>
-
     <!-- Google Fonts cdn -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,8 +17,26 @@
       src="https://kit.fontawesome.com/20ed8860d8.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+          fontFamily: {
+            manrope: ['Manrope', 'serif']
+          }
+        },
+      };
+    </script>
+
   </head>
-  <body>
+  <body class="font-manrope">
     <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
       <!-- header section -->
       <header class="flex flex-col sm:flex-row pt-10 mb-20">
